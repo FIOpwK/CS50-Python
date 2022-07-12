@@ -6,5 +6,9 @@ def getUserName() -> str:
     # say hello to username
     print("hello, {}".format(username))
     print(f'Welcome to "{codingCourseName}", ' + username)
+    fullname = input("What is your first and last name? ")
+    firstName, lastName = fullname.split(" ")
+
+    print(f'Should I call you by, {firstName}, or, {lastName}')
 
 getUserName()
